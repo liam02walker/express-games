@@ -1,6 +1,6 @@
 import "./App.css";
 import axios from "axios";
-import yearForm from "./Components/yearForm";
+import YearForm from "./Components/YearForm";
 import { useState } from "react";
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
   return (
     <>
       <h1>A HELL OF A LOT OF GAMES</h1>
-      <yearForm getGames={getGames} />
+      <YearForm getGames={getGames} />
 
       {games.map((game) => {
         return (
